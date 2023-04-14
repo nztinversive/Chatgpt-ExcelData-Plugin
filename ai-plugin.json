@@ -1,0 +1,18 @@
+{
+    "schema_version": "v1",
+    "name_for_human": "Excel API Plugin",
+    "name_for_model": "excel",
+    "description_for_human": "Plugin for interacting with an Excel spreadsheet. You can fetch data from the spreadsheet.",
+    "description_for_model": "Plugin for interacting with an Excel spreadsheet. You can fetch data from the spreadsheet.",
+    "auth": {
+        "type": "none"
+    },
+    "api": {
+        "type": "openapi",
+        "url": "https://excelsheetplugin.nztinversive.repl.co/openapi.yaml",
+        "is_user_authenticated": false
+    },
+    "logo_url": "https://excelsheetplugin.nztinversive.repl.co/logo.png",
+    "contact_email": "support@example.com",
+    "legal_info_url": "http://www.example.com/legal"
+}
