@@ -1,0 +1,32 @@
+openapi: 3.0.1
+info:
+  title: Excel API Plugin
+  description: A plugin that allows the user to interact with an Excel spreadsheet using ChatGPT.
+  version: 'v1'
+servers:
+  - url: https://excelsheetplugin.nztinversive.repl.co
+paths:
+  /api/data:
+    get:
+      operationId: getData
+      summary: Get data from the Excel spreadsheet
+      parameters:
+        - name: sheet_name
+          in: query
+          description: The name of the sheet to fetch data from.
+          required: false
+          schema:
+            type: string
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: array
+                  items:
+                    type: string
+
+
